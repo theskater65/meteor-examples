@@ -1,0 +1,25 @@
+<body>
+	<h1>Custom user creation</h1>
+	<hr>
+	<form id="add">
+		<label>user name: <input type="text" name="username" placeholder="type your username"></label>
+		<br>
+		<label>account type: <input type="text" name="type" placeholder="specify your account type"></label>
+		<br>
+		<label>email address: <input type="text" name="email" placeholder="type your email address"></label>
+		<br>
+		<input type="submit" name="" value="Create">
+	</form>
+	<br>
+	<form id="del">
+		<label>username: <input type="text" name="username"></label>
+		<input type="submit" name="" value="Delete">
+	</form>
+	<hr>
+	<h3>Blake user</h3>
+	<button type="button" class="add">Create</button>
+	<button type="button" class="del">Delete</button>
+	<hr>
+	<h3>List of users</h3>
+	<ul>{{> usersPreview}}</ul>
+</body>
